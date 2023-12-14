@@ -5,8 +5,8 @@ resource "aws_instance" "web" {
   tags = {
     "Name" = "web-2"
   }
-  lifecycle {
-    prevent_destroy = true # Default is false
-  }
+  # lifecycle {
+  #   prevent_destroy = true # Default is false
+  # }
 }
 
