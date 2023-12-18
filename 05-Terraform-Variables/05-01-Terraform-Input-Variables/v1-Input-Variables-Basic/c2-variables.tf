@@ -1,18 +1,20 @@
 # Input Variables
+
+
 variable "aws_region" {
   description = "Region in which AWS resources to be created"
   type        = string
   default     = "us-east-1"
 }
 
-variable "ec2_ami_id" {
+variable "aws_ami_id" {
   description = "AMI ID"
   type        = string
-  default     = "ami-0915bcb5fa77e4892" # Amazon2 Linux AMI ID
+  default     = "ami-0759f51a90924c166"
 }
 
-variable "ec2_instance_count" {
-  description = "EC2 Instance Count"
+variable "aws_instance_count" {
+  description = "AWS instance Count"
   type        = number
   default     = 1
 }
